@@ -58,7 +58,7 @@ Another way is to run them all automatically by:
 Some of the testcases require user input. Those ones won't give any results and the command will get stuck in the infinite loop. Those test cases need to be ran individually.
 
 ## Testcase suite:
-
+```
 Consists of 7 vulnerability groups:
 CWE 121 – Stack-based Buffer Overflow
 CWE 122 – Heap-based Buffer Overflow
@@ -67,9 +67,4 @@ CWE 126 – Buffer Over-read
 CWE 127 – Buffer Under-read
 CWE 190 – Integer Overflow
 CWE 191 – Integer Underflow
-
-
 ```
-for f in *.out; do ./$f > $f.txt 2>&1; done
-```
-This will output results in *.txt files.
