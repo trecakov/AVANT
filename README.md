@@ -2,6 +2,9 @@
 
 AVANT is a vulnerability checking tool that is architecture-agnostic and reports vulnerabilities found in our test suite.
 
+### Motivation
+
+AVANT is mainly developed to show the differences of the architectures security. I have tested this test suite on Intel x86_64 and ARM architectures and both reported same vulnerabilities. However, interesting part is that same reported vulnerabilities on two architectures differ in their stack value/addresses which can lead to some other attacks on the security of these architectures.
 
 ### Prerequisites
 
@@ -58,8 +61,9 @@ Another way is to run them all automatically by:
 Some of the testcases require user input. Those ones won't give any results and the command will get stuck in the infinite loop. Those test cases need to be ran individually.
 
 ## Testcase suite:
-```
+
 Consists of 7 vulnerability groups:
+```
 CWE 121 – Stack-based Buffer Overflow
 CWE 122 – Heap-based Buffer Overflow
 CWE 124 – Buffer Underwrite
